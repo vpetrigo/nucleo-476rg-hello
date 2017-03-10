@@ -1,0 +1,10 @@
+# IDEA
+.idea/*
+
+# CMake
+cmake-build*/*
+
+# STM32CubeMX
+Cube/*
+!Cube/*.ioc
+
