@@ -1,5 +1,5 @@
-set(system_src armgcc/startup_stm32l476xx.s 
-               gpio.c 
+set(startup_src armgcc/startup_stm32l476xx.s)
+set(system_src gpio.c
                stm32l4xx_hal_msp.c 
                stm32l4xx_it.c 
                system_stm32l4xx.c)
@@ -7,4 +7,5 @@ set(system_src armgcc/startup_stm32l476xx.s
 get_property(inc_dirs DIRECTORY PROPERTY INCLUDE_DIRECTORIES)
 include_directories(${inc_dirs})
 
-add_library(system ${system_src})
+add_library(startup OBJECT ${startup_src})
+add_library(system OBJECT ${system_src})
