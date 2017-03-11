@@ -8,3 +8,5 @@ cmake-build*/*
 Cube/*
 !Cube/*.ioc
 
+# VS Code
+.vscode/*
