@@ -8,7 +8,7 @@ set(CMAKE_C_STANDARD 11)
 set(CMAKE_C_STANDARD_REQUIRED ON)
 # CPU architecture specific flags
 set(CPU_FLAGS "-mthumb -mcpu=cortex-m4")
-set(GCC_FLAGS "-ffunction-sections -fdata-sections -fmessage-length=0 -fsigned-char")
+set(GCC_FLAGS "-ffunction-sections -fdata-sections -fmessage-length=0 -fsigned-char -fshort-enums")
 set(STM32L4_LD_SCRIPT "${CMAKE_SOURCE_DIR}/hal/system/armgcc/STM32L476RGTx_FLASH.ld")
 set(CMAKE_EXE_LINKER_FLAGS "--specs=nano.specs -Xlinker --gc-sections")
 

@@ -7,5 +7,5 @@ set(system_src gpio.c
 get_property(inc_dirs DIRECTORY PROPERTY INCLUDE_DIRECTORIES)
 include_directories(${inc_dirs})
 
-add_library(startup ${startup_src})
-add_library(system ${system_src})
+add_library(startup OBJECT ${startup_src})
+add_library(system OBJECT ${system_src})
