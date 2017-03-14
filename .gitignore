@@ -10,3 +10,7 @@ Cube/*
 
 # VS Code
 .vscode/*
+
+# Docs
+docs/html
+**/*doxygen*.db
