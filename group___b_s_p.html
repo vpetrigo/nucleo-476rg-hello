@@ -38,9 +38,8 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#define-members">Macros</a> &#124;
-<a href="#enum-members">Enumerations</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#groups">Modules</a> &#124;
+<a href="#define-members">Macros</a>  </div>
   <div class="headertitle">
 <div class="title">Board Support Package</div>  </div>
 </div><!--header-->
@@ -49,6 +48,12 @@ $(function() {
 <p>Board abstraction layer.  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="groups"></a>
+Modules</h2></td></tr>
+<tr class="memitem:group___b_s_p___led"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___b_s_p___led.html">BSP Led specific functions</a></td></tr>
+<tr class="memdesc:group___b_s_p___led"><td class="mdescLeft">&#160;</td><td class="mdescRight">Board abstraction for working with on-board LED. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
 <tr class="memitem:ga31ac298fbbc8a1d6de1dc4577a108232"><td class="memItemLeft" align="right" valign="top"><a id="ga31ac298fbbc8a1d6de1dc4577a108232"></a>
@@ -101,128 +106,9 @@ Macros</h2></td></tr>
 <tr class="memitem:ga1540b1bd5614d42feb933c5b943263c0"><td class="memItemLeft" align="right" valign="top"><a id="ga1540b1bd5614d42feb933c5b943263c0"></a>
 #define&#160;</td><td class="memItemRight" valign="bottom"><b>SWO_GPIO_Port</b>&#160;&#160;&#160;GPIOB</td></tr>
 <tr class="separator:ga1540b1bd5614d42feb933c5b943263c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
-Enumerations</h2></td></tr>
-<tr class="memitem:ga70a7e2a8b506ef9bfcf8a4fd5c2d98e1"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___b_s_p.html#ga70a7e2a8b506ef9bfcf8a4fd5c2d98e1">Board_Leds_t</a> { <a class="el" href="group___b_s_p.html#gga70a7e2a8b506ef9bfcf8a4fd5c2d98e1aa60bd322f93178d68184e30e162571ca">GREEN</a>
- }<tr class="memdesc:ga70a7e2a8b506ef9bfcf8a4fd5c2d98e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Available LEDs on the board.  <a href="group___b_s_p.html#ga70a7e2a8b506ef9bfcf8a4fd5c2d98e1">More...</a><br /></td></tr>
-</td></tr>
-<tr class="separator:ga70a7e2a8b506ef9bfcf8a4fd5c2d98e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:ga14764cb6fc95034e4eca1ae155c928f5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___b_s_p.html#ga14764cb6fc95034e4eca1ae155c928f5">BSP_LedOn</a> (const <a class="el" href="group___b_s_p.html#ga70a7e2a8b506ef9bfcf8a4fd5c2d98e1">Board_Leds_t</a> led)</td></tr>
-<tr class="memdesc:ga14764cb6fc95034e4eca1ae155c928f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Switch on a LED on the board.  <a href="#ga14764cb6fc95034e4eca1ae155c928f5">More...</a><br /></td></tr>
-<tr class="separator:ga14764cb6fc95034e4eca1ae155c928f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa17dfcaa50d75a60c05479db66d5fd53"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___b_s_p.html#gaa17dfcaa50d75a60c05479db66d5fd53">BSP_LedOff</a> (const <a class="el" href="group___b_s_p.html#ga70a7e2a8b506ef9bfcf8a4fd5c2d98e1">Board_Leds_t</a> led)</td></tr>
-<tr class="memdesc:gaa17dfcaa50d75a60c05479db66d5fd53"><td class="mdescLeft">&#160;</td><td class="mdescRight">Switch off a LED on the board.  <a href="#gaa17dfcaa50d75a60c05479db66d5fd53">More...</a><br /></td></tr>
-<tr class="separator:gaa17dfcaa50d75a60c05479db66d5fd53"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaf8175436b623225f4730faa0cf57b75f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___b_s_p.html#gaf8175436b623225f4730faa0cf57b75f">BSP_LedToggle</a> (const <a class="el" href="group___b_s_p.html#ga70a7e2a8b506ef9bfcf8a4fd5c2d98e1">Board_Leds_t</a> led)</td></tr>
-<tr class="memdesc:gaf8175436b623225f4730faa0cf57b75f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Toggle a LED state.  <a href="#gaf8175436b623225f4730faa0cf57b75f">More...</a><br /></td></tr>
-<tr class="separator:gaf8175436b623225f4730faa0cf57b75f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>Board abstraction layer. </p>
-<h2 class="groupheader">Enumeration Type Documentation</h2>
-<a id="ga70a7e2a8b506ef9bfcf8a4fd5c2d98e1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga70a7e2a8b506ef9bfcf8a4fd5c2d98e1">&#9670;&nbsp;</a></span>Board_Leds_t</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="group___b_s_p.html#ga70a7e2a8b506ef9bfcf8a4fd5c2d98e1">Board_Leds_t</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Available LEDs on the board. </p>
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="gga70a7e2a8b506ef9bfcf8a4fd5c2d98e1aa60bd322f93178d68184e30e162571ca"></a>GREEN&#160;</td><td class="fielddoc"><p>Green LED. </p>
-</td></tr>
-</table>
-
-</div>
-</div>
-<h2 class="groupheader">Function Documentation</h2>
-<a id="gaa17dfcaa50d75a60c05479db66d5fd53"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaa17dfcaa50d75a60c05479db66d5fd53">&#9670;&nbsp;</a></span>BSP_LedOff()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void BSP_LedOff </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="group___b_s_p.html#ga70a7e2a8b506ef9bfcf8a4fd5c2d98e1">Board_Leds_t</a>&#160;</td>
-          <td class="paramname"><em>led</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Switch off a LED on the board. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">led</td><td>LED identifier to switch off </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="ga14764cb6fc95034e4eca1ae155c928f5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga14764cb6fc95034e4eca1ae155c928f5">&#9670;&nbsp;</a></span>BSP_LedOn()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void BSP_LedOn </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="group___b_s_p.html#ga70a7e2a8b506ef9bfcf8a4fd5c2d98e1">Board_Leds_t</a>&#160;</td>
-          <td class="paramname"><em>led</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Switch on a LED on the board. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">led</td><td>LED identifier to switch on </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="gaf8175436b623225f4730faa0cf57b75f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#gaf8175436b623225f4730faa0cf57b75f">&#9670;&nbsp;</a></span>BSP_LedToggle()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void BSP_LedToggle </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="group___b_s_p.html#ga70a7e2a8b506ef9bfcf8a4fd5c2d98e1">Board_Leds_t</a>&#160;</td>
-          <td class="paramname"><em>led</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Toggle a LED state. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">led</td><td>LED identifier to toggle </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
