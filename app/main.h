@@ -8,9 +8,10 @@
 #ifndef __MAIN_H
 #define __MAIN_H
 
-/** \defgroup BSP (Board Support Package)
-  * @{
-  */
+/** \defgroup BSP Board Support Package
+ *  \brief Board abstraction layer
+ * @{
+ */
 
 /// \brief Button 1 GPIO Pin definition
 #define B1_Pin GPIO_PIN_13
