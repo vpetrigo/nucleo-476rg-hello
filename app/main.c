@@ -1,6 +1,7 @@
 #include "main.h"
 #include "stm32l4xx_hal.h"
 #include "gpio.h"
+#include "bsp_led.h"
 
 void SystemClock_Config(void);
 void Error_Handler(void);
@@ -16,7 +17,7 @@ int main(void)
 
   while (1)
   {
-    HAL_GPIO_TogglePin(LD2_GPIO_Port, LD2_Pin);
+    BSP_LedToggle(GREEN);
     HAL_Delay(1000);
   }
 
