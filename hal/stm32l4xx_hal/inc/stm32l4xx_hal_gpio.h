@@ -287,7 +287,44 @@ void              HAL_GPIO_DeInit(GPIO_TypeDef  *GPIOx, uint32_t GPIO_Pin);
    
 /* IO operation functions *****************************************************/
 GPIO_PinState     HAL_GPIO_ReadPin(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin);
+/**
+  * @brief  Set or clear the selected data port bit.
+  *
+  * @note   This function uses GPIOx_BSRR and GPIOx_BRR registers to allow atomic read/modify
+  *         accesses. In this way, there is no risk of an IRQ occurring between
+  *         the read and the modify access.
+  *
+  * @param  GPIOx: where x can be (A..H) to select the GPIO peripheral for STM32L4 family
+  * @param  GPIO_Pin: specifies the port bit to be written.
+  *         This parameter can be one of GPIO_PIN_x where x can be (0..15).
+  * @param  PinState: specifies the value to be written to the selected bit.
+  *         This parameter can be one of the GPIO_PinState enum values:
+  *            @arg GPIO_PIN_RESET: to clear the port pin
+  *            @arg GPIO_PIN_SET: to set the port pin
+  * @retval None
+  *//**
+  * @brief  Set or clear the selected data port bit.
+  *
+  * @note   This function uses GPIOx_BSRR and GPIOx_BRR registers to allow atomic read/modify
+  *         accesses. In this way, there is no risk of an IRQ occurring between
+  *         the read and the modify access.
+  *
+  * @param  GPIOx: where x can be (A..H) to select the GPIO peripheral for STM32L4 family
+  * @param  GPIO_Pin: specifies the port bit to be written.
+  *         This parameter can be one of GPIO_PIN_x where x can be (0..15).
+  * @param  PinState: specifies the value to be written to the selected bit.
+  *         This parameter can be one of the GPIO_PinState enum values:
+  *            @arg GPIO_PIN_RESET: to clear the port pin
+  *            @arg GPIO_PIN_SET: to set the port pin
+  * @retval None
+  */
 void              HAL_GPIO_WritePin(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin, GPIO_PinState PinState);
+/**
+  * @brief  Toggle the specified GPIO pin.
+  * @param  GPIOx: where x can be (A..H) to select the GPIO peripheral for STM32L4 family
+  * @param  GPIO_Pin: specifies the pin to be toggled.
+  * @retval None
+  */
 void              HAL_GPIO_TogglePin(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin);
 HAL_StatusTypeDef HAL_GPIO_LockPin(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin);
 void              HAL_GPIO_EXTI_IRQHandler(uint16_t GPIO_Pin);
