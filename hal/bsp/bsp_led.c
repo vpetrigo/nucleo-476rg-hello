@@ -1,3 +1,7 @@
+/**
+ * \file bsp_led.c
+ * \brief Board specific implementation related to LED functions
+ */
 #include "bsp_led.h"
 #include "main.h"
 #include "gpio.h"

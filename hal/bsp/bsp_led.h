@@ -1,3 +1,7 @@
+/**
+ * \file bsp_led.h
+ * \brief Defines interface for working with on-board LEDs
+ */
 #ifndef ARM_HELLO_WORLD_BSP_LED_H
 #define ARM_HELLO_WORLD_BSP_LED_H
 /** \defgroup BSP_Led BSP Led specific functions
