@@ -37,7 +37,7 @@
 #define SWO_GPIO_Port GPIOB
 
 /**
-  * @}
-  */
+ * @}
+ */
 
 #endif /* __MAIN_H */
