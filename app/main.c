@@ -24,14 +24,12 @@ int main(void)
   return 0;
 }
 
-/** System Clock Configuration
-*/
+// System Clock Configuration
 void SystemClock_Config(void)
 {
   RCC_OscInitTypeDef RCC_OscInitStruct;
   RCC_ClkInitTypeDef RCC_ClkInitStruct;
-  /**Initializes the CPU, AHB and APB busses clocks
-  */
+  // Initializes the CPU, AHB and APB busses clocks
   RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSI;
   RCC_OscInitStruct.HSIState = RCC_HSI_ON;
   RCC_OscInitStruct.HSICalibrationValue = 16;
@@ -39,8 +37,7 @@ void SystemClock_Config(void)
   if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK) {
     Error_Handler();
   }
-  /**Initializes the CPU, AHB and APB busses clocks
-  */
+  // Initializes the CPU, AHB and APB busses clocks
   RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK|RCC_CLOCKTYPE_SYSCLK
           |RCC_CLOCKTYPE_PCLK1|RCC_CLOCKTYPE_PCLK2;
   RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_HSI;
@@ -52,19 +49,16 @@ void SystemClock_Config(void)
     Error_Handler();
   }
   
-  /**Configure the main internal regulator output voltage
-  */
+  // Configure the main internal regulator output voltage
   if (HAL_PWREx_ControlVoltageScaling(PWR_REGULATOR_VOLTAGE_SCALE1) != HAL_OK) {
     Error_Handler();
   }
   
-  /**Configure the Systick interrupt time
-  */
+  // Configure the Systick interrupt time
   HAL_SYSTICK_Config(HAL_RCC_GetHCLKFreq()/1000);
-  /**Configure the Systick
-  */
+  // Configure the Systick
   HAL_SYSTICK_CLKSourceConfig(SYSTICK_CLKSOURCE_HCLK);
-  /* SysTick_IRQn interrupt configuration */
+  // SysTick_IRQn interrupt configuration
   HAL_NVIC_SetPriority(SysTick_IRQn, 0, 0);
 }
 
